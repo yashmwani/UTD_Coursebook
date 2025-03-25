@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UTD CS Course Data Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #c75b12; /* UTD orange */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        button {
+            background-color: #c75b12;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #a84a0f;
+        }
+        #status {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        #resultContainer {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UTD CS Course Information Extractor</h1>
+        
+        <div class="button-container">
+            <button id="extractButton">Extract Course Data & Generate SQL</button>
+            <button id="downloadButton" disabled>Download SQL File</button>
+        </div>
+        
+        <div id="status">Ready to extract course data from coursebook2025.html</div>
+        
+        <div id="resultContainer">
+            <p>Results will appear here after extraction.</p>
+        </div>
+    </div>
+    
+    <script src="task1.js"></script>
+</body>
+</html>
